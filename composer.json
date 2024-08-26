@@ -1,0 +1,30 @@
+{
+    "name": "william/technique-db-mvc",
+    "description": "Journal that you can track your grappling progress with.",
+    "license": "MIT",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Wiltzsu",
+            "email": "william.lonnberg@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpmd/phpmd": "^2.15"
+    },
+    "require": {
+        "phroute/phroute": "^2.2",
+        "php-di/php-di": "^7.0",
+        "twig/twig": "^3.10"
+    },
+    "scripts": {
+        "build-production": [
+            "composer install --no-dev --optimize-autoloader"
+        ]
+    }
+}
